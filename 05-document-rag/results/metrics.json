@@ -1,0 +1,56 @@
+{
+  "corpus_size": 3000,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "summarizer": "transformers",
+  "summary_model": "sshleifer/distilbart-cnn-6-6",
+  "retrieval": {
+    "bm25": {
+      "query_count": 300,
+      "hit_rate_at_5": 0.45,
+      "mrr_at_5": 0.3768888888888889
+    },
+    "dense": {
+      "query_count": 300,
+      "hit_rate_at_5": 0.5,
+      "mrr_at_5": 0.40661111111111103
+    },
+    "hybrid": {
+      "query_count": 300,
+      "hit_rate_at_5": 0.5,
+      "mrr_at_5": 0.40833333333333327
+    }
+  },
+  "summarization": {
+    "case_count": 5,
+    "rouge1": 0.4353880596527655,
+    "rouge2": 0.18780140778488214,
+    "rougeL": 0.3476208432090785
+  },
+  "summary_outputs": [
+    {
+      "title": "City transit expansion",
+      "reference": "The city approved an electric bus corridor linking northern neighborhoods to the central station, with construction starting in March and a target of reducing 6,000 daily car journeys.",
+      "generated": "The route will connect the northern neighborhoods with the central railway station. Officials estimate that the service will remove 6,000 daily car journeys. The project is funded by municipal bonds and a national clean-transport grant."
+    },
+    {
+      "title": "Battery research",
+      "reference": "A solid-state battery using a ceramic electrolyte retained 91 percent capacity after 1,000 cycles, but low manufacturing yield still blocks mass production.",
+      "generated": "The team replaced the conventional liquid electrolyte with a ceramic layer. The prototype is not ready for mass production because the manufacturing yield remains low. A pilot production line will be used to test whether the process can scale."
+    },
+    {
+      "title": "Flood warning system",
+      "reference": "The flood system combines gauge and rainfall data, added 42 minutes of warning during trials, and still has connectivity gaps in two rural districts.",
+      "generated": "A regional flood warning system now combines river gauges with short-range rainfall forecasts. Alerts are issued when both observed water levels and forecast rainfall cross local thresholds. During a six-month trial, the system provided an average of 42 minutes of additional warning."
+    },
+    {
+      "title": "School meal programme",
+      "reference": "The free breakfast programme expanded to 75 schools after attendance rose at earlier sites, though an independent evaluation will examine whether breakfast caused the improvement.",
+      "generated": "The education department expanded its free breakfast programme from 40 to 75 schools. Attendance at the original schools rose by 3.2 percentage points over the previous year. The department has not claimed that breakfast alone caused the increase."
+    },
+    {
+      "title": "Software security release",
+      "reference": "Version 4.2.1 fixes an administrative API authentication bypass affecting versions 4.0 to 4.2 with single sign-on; administrators should upgrade and rotate tokens.",
+      "generated": "The flaw affects versions 4.0 through 4.2 when single sign-on is enabled. Administrators should upgrade and rotate active administrative tokens after deployment."
+    }
+  ]
+}

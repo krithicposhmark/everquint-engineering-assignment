@@ -1,0 +1,51 @@
+{
+  "rubric": {
+    "scale": "1 (poor) to 5 (strong)",
+    "fidelity": "Claims are supported by the source text.",
+    "coverage": "The main facts in the reference are retained.",
+    "readability": "The summary is concise and easy to follow."
+  },
+  "reviewer_count": 1,
+  "cases": [
+    {
+      "title": "City transit expansion",
+      "fidelity": 5,
+      "coverage": 4,
+      "readability": 5,
+      "note": "Accurate and concise; omits the March construction date."
+    },
+    {
+      "title": "Battery research",
+      "fidelity": 5,
+      "coverage": 3,
+      "readability": 5,
+      "note": "Captures the manufacturing constraint but drops the capacity-retention result."
+    },
+    {
+      "title": "Flood warning system",
+      "fidelity": 5,
+      "coverage": 4,
+      "readability": 5,
+      "note": "Retains the method and warning gain; omits the rural connectivity issue."
+    },
+    {
+      "title": "School meal programme",
+      "fidelity": 5,
+      "coverage": 4,
+      "readability": 5,
+      "note": "Preserves the causal caveat but omits the planned independent evaluation."
+    },
+    {
+      "title": "Software security release",
+      "fidelity": 5,
+      "coverage": 4,
+      "readability": 5,
+      "note": "Keeps affected versions and the action; omits the fixed release number."
+    }
+  ],
+  "averages": {
+    "fidelity": 5.0,
+    "coverage": 3.8,
+    "readability": 5.0
+  }
+}
